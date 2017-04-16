@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "amd",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "outDir": "../build/",
+        "sourceMap": true,
+        "jsx": "react"
+    },
+
+    "include": [
+        "page-structure/**/*"
+    ]
+}
