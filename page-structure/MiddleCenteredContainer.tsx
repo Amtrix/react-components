@@ -1,7 +1,8 @@
 import * as React from "react";
 
 export interface MiddleCenteredContainerProps {
-    containerWidth: string;
+    containerWidth?: string;
+    containerMaxWidth?: string;
 };
 
 export class MiddleCenteredContainer extends React.Component<MiddleCenteredContainerProps, {}> {
@@ -9,7 +10,7 @@ export class MiddleCenteredContainer extends React.Component<MiddleCenteredConta
         return (
             <div>
                 <div style={{textAlign: "center"}}>
-                    <div style={{display: "inline-block", width: this.props.containerWidth}}>
+                    <div style={{display: "inline-block", width: this.props.containerWidth, maxWidth: this.props.containerMaxWidth}}>
                         <div style={{textAlign: "left"}}>
                             {this.props.children}
                         </div>
