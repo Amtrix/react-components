@@ -2,6 +2,9 @@
     "compilerOptions": {
         "target": "ES6",
         "module": "amd",
+        "moduleResolution": "node",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
         "noImplicitAny": true,
         "removeComments": true,
         "outDir": "../build/",
