@@ -37,7 +37,7 @@ export class Form extends React.Component<FormProps, FormState> {
     }
 
     componentDidMount(): any {
-        $(this.divFormContainer).keypress((event) => {
+        $(this.divFormContainer).keypress((event: any) => {
             if (event.which == 13 && !event.shiftKey) {
                 this.props.on.submit(this.processForm(), () => {this.clear();});
                 return false;
